@@ -11,6 +11,12 @@ width: 25px;
 height: 25px;
 background-color: white;
 display: inline-block;
+margin-bottom: -5px;
+}
+
+.row{
+  width: 30%;
+  margin: 0 auto;
 }
 
 .border{
