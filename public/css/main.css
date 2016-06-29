@@ -22,3 +22,15 @@ margin-bottom: -5px;
 .border{
   border: solid 1px black;
 }
+
+.red {
+  background-color: red;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.green {
+  background-color: green;
+}

@@ -6,7 +6,13 @@ var numOfCols = 10;
 initGrid();
 addClickHanderlers();
 function changeColor(){
-  console.log('i am changing!!!');
+
+  var colorClasses = ['white', 'red', 'green', 'blue'];
+  var colorCycle = Math.round(Math.random() * colorClasses.length);
+  var color = colorClasses[colorCycle];
+  $(this).removeClass(colorClasses.join(' '));
+  $(this).addClass(color);
+
 }
 
 function addClickHanderlers(){
@@ -14,7 +20,7 @@ function addClickHanderlers(){
   var cells = $('.cell');
   for(var counter = 0; counter < cells.length; counter += 1){
     var cell = cells[counter];
-    $(cell).on('click', changeColor); //Gotcha
+    $(cell).on('mouseenter', changeColor); //Gotcha
   }
 }
   function initGrid(){
